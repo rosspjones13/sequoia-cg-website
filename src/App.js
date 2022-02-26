@@ -2,44 +2,27 @@ import React, { Component, Fragment } from 'react';
 import ReactGA from 'react-ga';
 import './App.css';
 
-import { withRouter, Route, Switch, Redirect } from 'react-router-dom'
-import TitleBar from './containers/TitleBar/TitleBar'
+import { withRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom'
 import WelcomeScreen from './containers/WelcomeScreen/WelcomeScreen'
 import ContactScreen from './containers/ContactScreen/ContactScreen'
-import SiteMap from './containers/SiteMap/SiteMap'
+import Layout from './containers/Layout/Layout'
 
 const trackingId = "UA-158882003-1";
 ReactGA.initialize(trackingId);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Switch>
-          {/* <Route exact path="/" render={() => <Redirect to="/home"/>}/> */}
-          <Route exact path="/" render={() => {
-            return (
-              <Fragment>
-                <TitleBar active="home"/>
-                <WelcomeScreen />
-              </Fragment>
-            )
-          }}/>
-          <Route exact path="/contact" render={() => {
-            return (
-              <Fragment>
-                <TitleBar active="contact"/>
-                <ContactScreen />
-              </Fragment>
-            )
-          }}/>
-          <Route path="*" render={() => <Redirect to="/"/>} />
-        </Switch>
-        <SiteMap />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div className="App">
+      <Routes>
+        <Route element={<Layout />}>
+          <Route exact path="/" element={<WelcomeScreen />}/>
+          <Route exact path="/contact" element={<ContactScreen />}/>
+          <Route exact path="*" element={<WelcomeScreen />} />
+        </Route>
+      </Routes>
+    </div>
+  )
 }
 
-export default withRouter(App);
+export default App;

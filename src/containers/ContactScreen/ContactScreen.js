@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
+import TitleBar from '../TitleBar/TitleBar'
 import './ContactScreen.css'
 
 class ContactScreen extends Component {
@@ -58,6 +59,7 @@ class ContactScreen extends Component {
     const { name, email, message, isSent } = this.state
     return (
       <div id="click-container" className="contact-screen">
+        <TitleBar active="contact"/>
         <div>
           <h2 className="contact-intro">
             Contact Us
