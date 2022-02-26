@@ -2,7 +2,7 @@ import React from "react";
 // import posed from 'react-pose'
 // import SplitText from 'react-pose-text'
 import { Link } from "react-router-dom";
-import "./SiteMap.css";
+import "./SiteMap.scss";
 
 /* <div className="between-list-item"/>
             <li className="site-list-item"><a href="/company">Company</a></li>
@@ -18,7 +18,7 @@ const SiteMap = () => {
             <Link
               className="site-list-link"
               to="/home"
-              onClick={window.scrollTo(0, 0)}
+              // onClick={window.scrollTo(0, 0)}
             >
               Home
             </Link>
@@ -28,7 +28,7 @@ const SiteMap = () => {
             <Link
               className="site-list-link"
               to="/contact"
-              onClick={window.scrollTo(0, 0)}
+              // onClick={window.scrollTo(0, 0)}
             >
               Contact
             </Link>

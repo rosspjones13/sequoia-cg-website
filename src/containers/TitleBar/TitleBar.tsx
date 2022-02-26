@@ -1,10 +1,9 @@
 import React from "react";
 import Logo from "../../components/Logo";
 import Menu from "../Menu/Menu";
-import "./TitleBar.css";
+import "./TitleBar.scss";
 
-const TitleBar = () => {
-  const { active } = this.props;
+const TitleBar = (active) => {
   return (
     <div className="titlebar">
       <Logo />

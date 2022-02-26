@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import MenuButton from "../../components/MenuButton";
-import "./Menu.css";
+import "./Menu.scss";
 
-const Menu = (active) => {
+export const Menu = (active) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  toggleMenu = () => {
+  const toggleMenu = () => {
     // let clickContainer = document.querySelectorAll("#click-container")
     if (!menuOpen) {
       setMenuOpen(true);
-      window.addEventListener("mouseup", () => this.checkWindowClick());
+      window.addEventListener("mouseup", () => checkWindowClick());
       // this.windowClick()
       // clickContainer.addEventListener("click", () => this.toggleMenu())
     } else {
       var menu = document.getElementById("myDropdown");
       // var menuButton = document.querySelector(".menu-container")
-      menu.classList.add("slide-out");
+      menu?.classList.add("slide-out");
       // menuButton.classList.add("change")
       setTimeout(() => {
-        menu.classList.remove("slide-out");
+        menu?.classList.remove("slide-out");
         // menuButton.classList.remove("change")
         setMenuOpen(true);
       }, 500);
@@ -27,7 +27,7 @@ const Menu = (active) => {
     }
   };
 
-  checkWindowClick = () => {
+  const checkWindowClick = () => {
     // var menu = document.getElementById("myDropdown")
   };
 
@@ -35,7 +35,7 @@ const Menu = (active) => {
     <div className="menu fullscreen">
       <div
         className={`menu-container ${menuOpen ? "change" : ""}`}
-        onClick={() => this.toggleMenu()}
+        onClick={() => toggleMenu()}
       >
         <div className="bar1"></div>
         <div className="bar2"></div>
@@ -48,14 +48,14 @@ const Menu = (active) => {
         <MenuButton
           menuItem="Home"
           active={active}
-          toggleMenu={() => this.toggleMenu()}
+          toggleMenu={() => toggleMenu()}
         />
         {/* <MenuButton menuItem="Company" active={active}/>
           <MenuButton menuItem="Services" active={active}/> */}
         <MenuButton
           menuItem="Contact"
           active={active}
-          toggleMenu={() => this.toggleMenu()}
+          toggleMenu={() => toggleMenu()}
         />
       </div>
     </div>

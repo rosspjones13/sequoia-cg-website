@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import ReactGA from 'react-ga';
-import './App.css';
+import './App.scss';
 
-import { withRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import WelcomeScreen from './containers/WelcomeScreen/WelcomeScreen'
 import ContactScreen from './containers/ContactScreen/ContactScreen'
 import Layout from './containers/Layout/Layout'
@@ -16,9 +16,9 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route element={<Layout />}>
-          <Route exact path="/" element={<WelcomeScreen />}/>
-          <Route exact path="/contact" element={<ContactScreen />}/>
-          <Route exact path="*" element={<WelcomeScreen />} />
+          <Route path="/" element={<WelcomeScreen />}/>
+          <Route path="/contact" element={<ContactScreen />}/>
+          <Route path="*" element={<WelcomeScreen />} />
         </Route>
       </Routes>
     </div>

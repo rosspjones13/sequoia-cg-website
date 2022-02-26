@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import  from './sakura-js/dist/sakura'
-import './Sakura.css'
+import './Sakura.scss'
 
 var Sakura = function Sakura(selector, options) {
   var _this = this;

@@ -1,18 +1,13 @@
-import React, { Component, Fragment } from "react";
-// import posed from 'react-pose'
-// import SplitText from 'react-pose-text'
-// import LearnMore from '../../components/LearnMore'
+import React from "react";
 import { Link, Element } from "react-scroll";
 import Particles from "react-tsparticles";
-// import Blossom from '../../components/Sakura/Sakura'
-import TitleBar from "../TitleBar/TitleBar";
 import { particlesOptions } from "./particlesOptions";
-import "./WelcomeScreen.css";
-import "./LearnMore.css";
+import "./WelcomeScreen.scss";
+import "./LearnMore.scss";
 
 const WelcomeScreen = () => {
   return (
-    <Fragment>
+    <>
       <div id="click-container" className="welcome-screen">
         <Particles
           id="tsparticles"
@@ -194,7 +189,7 @@ const WelcomeScreen = () => {
           </ul>
         </div>
       </Element>
-    </Fragment>
+    </>
   );
 };
 

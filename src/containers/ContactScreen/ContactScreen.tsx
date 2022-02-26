@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import TitleBar from "../TitleBar/TitleBar";
-import "./ContactScreen.css";
+import "./ContactScreen.scss";
 
 const ContactScreen = () => {
   // constructor(props) {
@@ -77,7 +77,7 @@ const ContactScreen = () => {
       <TitleBar active="contact" />
       <div>
         <h2 className="contact-intro">Contact Us</h2>
-        <p contentEditable={true} className="contact-description">
+        <p className="contact-description">
           Please send us an email and we will respond to your message as soon as
           available
         </p>
@@ -119,7 +119,7 @@ const ContactScreen = () => {
                 className="stretch text-area"
                 onChange={handleMessageChange}
                 placeholder="Please enter your message here..."
-                rows="10"
+                rows={10}
                 value={message}
                 required
               />
