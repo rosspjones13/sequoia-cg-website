@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MenuButton from "../../components/MenuButton";
-import "./Menu.scss";
+import "../../styles/Menu.sass";
 
 export const Menu = (active) => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -1,8 +1,8 @@
 import { Link, Element } from "react-scroll";
 import Particles from "react-tsparticles";
 import { particlesOptions } from "./particlesOptions";
-import "./WelcomeScreen.scss";
-import "./LearnMore.scss";
+import "../../styles/WelcomeScreen.sass";
+import "../../styles/LearnMore.sass";
 
 const WelcomeScreen = () => {
   return (

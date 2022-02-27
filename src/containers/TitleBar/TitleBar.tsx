@@ -1,6 +1,6 @@
 import Logo from "../../components/Logo";
 import Menu from "../Menu/Menu";
-import "./TitleBar.scss";
+import "../../styles/TitleBar.sass";
 
 const TitleBar = (active) => {
   return (

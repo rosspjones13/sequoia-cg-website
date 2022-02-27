@@ -1,5 +1,5 @@
 import ReactGA from 'react-ga';
-import './App.scss';
+import './App.sass';
 
 import { Route, Routes } from 'react-router-dom'
 import WelcomeScreen from './containers/WelcomeScreen/WelcomeScreen'

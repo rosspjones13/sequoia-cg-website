@@ -1,23 +1,10 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import TitleBar from "../TitleBar/TitleBar";
-import "./ContactScreen.scss";
+// import styles from "../../styles/ContactScreen.sass";
+import "../../styles/ContactScreen.sass";
 
 const ContactScreen = () => {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     name: "",
-  //     email: "",
-  //     message: "",
-  //     isSent: false
-  //   }
-  //   this.handleNameChange = this.handleNameChange.bind(this)
-  //   this.handleEmailChange = this.handleEmailChange.bind(this)
-  //   this.handleMessageChange = this.handleMessageChange.bind(this)
-  //   this.handleSubmit = this.handleSubmit.bind(this)
-  // }
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./SiteMap.scss";
+import "../../styles/SiteMap.sass";
 
 /* <div className="between-list-item"/>
             <li className="site-list-item"><a href="/company">Company</a></li>
