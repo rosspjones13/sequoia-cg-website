@@ -1,6 +1,3 @@
-import React from "react";
-// import posed from 'react-pose'
-// import SplitText from 'react-pose-text'
 import { Link } from "react-router-dom";
 import "./SiteMap.scss";
 

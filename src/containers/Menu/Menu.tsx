@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MenuButton from "../../components/MenuButton";
 import "./Menu.scss";
 

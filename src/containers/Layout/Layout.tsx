@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 import { Outlet } from 'react-router-dom';
 import TitleBar from '../TitleBar/TitleBar'
 import SiteMap from '../SiteMap/SiteMap'

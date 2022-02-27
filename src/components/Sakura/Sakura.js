@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 // import  from './sakura-js/dist/sakura'
 import './Sakura.scss'
 

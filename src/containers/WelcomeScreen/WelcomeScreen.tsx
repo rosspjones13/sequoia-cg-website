@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Element } from "react-scroll";
 import Particles from "react-tsparticles";
 import { particlesOptions } from "./particlesOptions";
